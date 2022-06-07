@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=h2, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Ubah data</h2>
+    <form action="http://localhost:5000/ubah/{{data.notifikasi}})" method="post">
+      Notifikasi: <br />
+      <input type="text" name="notifikasi" value="{{data.notifikasi}}" /><br />
+      customer_name: <br />
+      <input type="text" name="customer_name" value="{{data.customer_name}}" /><br />
+      Req_date: <br />
+      <input type="text" name="date_request" value="{{data.date_request}}" /><br />
+      kerusakan: <br />
+      <input type="text" name="kerusakan" value="{{data.kerusakan}}" /><br />
+      parts: <br />
+      <input type="text" name="parts" value="{{data.parts}}" /><br />
+      reason: <br />
+      <input type="text" name="reason" value="{{data.reason}}" /><br />
+      Status: <br />
+      <input type="text" name="status" value="{{data.status}}" /><br />
+      Status_barang: <br />
+      <input type="text" name="status_barang" value="{{data.status_barang}}" /><br />
+      old_model: <br />
+      <input type="text" name="OLD_MODEL" value="{{data.OLD_MODE}}" /><br />
+      sn_old: <br />
+      <input type="text" name="SN_OLD" value="{{data.SN_OLD}}" /><br />
+      <p><input type="submit" value="Simpan" /></p>
+    </form>
+  </body>
+</html>

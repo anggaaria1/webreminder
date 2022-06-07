@@ -1,0 +1,70 @@
+{% include 'header.html'%}
+{% include 'sidebar.html'%}
+
+<div class="col-sm-6">
+  <h1 class="m-0">Permintaan Barang</h1>
+</div>
+<br>
+<section class="content">
+
+  <div class="card">
+    <div class="card-header">
+      <h3 class="card-title">DataTable with default features</h3>
+    </div>
+    <br>
+    <!-- /.card-header -->
+    <!-- .card-body -->
+    <div class="card-body">
+      <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal-lg">
+        Add data
+      </button>
+      <br>
+      <br>
+      {% include 'form/form_permintaan_update.html'%}
+      <table id="example1" class="table table-bordered table-striped">
+        <thead>
+        <tr>
+        <th>Noifikasi</th>
+        <th>customer_name</th>
+        <th>Req_date</th>
+        <th>kerusakan</th>
+        <th>parts</th>
+        <th>reason</th>
+        <th>Status</th>
+        <th>Status_barang</th>
+        <th>old_model</th>
+        <th>sn_old</th>
+        <th>ubah</th>
+        <th>hapus</th>
+        </tr>
+        </thead>
+        <tbody>
+          {% for data in container %}
+          <tr>
+            <td>{{ data.notifikasi }}</td>
+            <td>{{ data.customer_name }}</td>
+            <td>{{ data.date_request }}</td>
+            <td>{{ data.kerusakan }}</td>
+            <td>{{ data.parts }}</td>
+            <td>{{ data.reason }}</td>
+            <td>{{ data.status }}</td>
+            <td>{{ data.status_barang }}</td>
+            <td>{{ data.OLD_MODEL }}</td>
+            <td>{{ data.SN_OLD }}</td>
+            <td><a href="http://localhost:5000/ubah/{{data.notifikasi}}">ubah</a></td>
+            <td><a href="http://localhost:5000/hapus/{{data.notifikasi}}}">hapus</a></td>
+          </tr>
+          {% endfor %}
+       
+        </tfoot>
+      </table>
+    </div>
+    <!-- /.card-body -->
+  </div>
+</div>
+  
+</section>
+<!-- /.content -->
+
+{% include 'footer.html'%}
+

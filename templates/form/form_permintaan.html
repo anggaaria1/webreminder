@@ -1,0 +1,51 @@
+<form role="form" action="{{url_for('tambah')}}" method="post" id="form1">
+  <div class="card-body">
+    <div class="form-group">
+      <label for="NO_LR">NO_LR</label>
+      <input type="text" class="form-control" name="NO_LR" id="NO_LR" placeholder="NO_LR" />
+    </div>
+
+    <div class="form-group">
+      <label for="NAMA">NAMA</label>
+      <input type="text" class="form-control" name="NAMA" id="NAMA" placeholder="NAMA" />
+
+      <div class="form-group">
+        <label for="WA_NUMBER">WA_NUMBER</label>
+        <input type="text" class="form-control" name="WA_NUMBER" id="WA_NUMBER" placeholder="WA_NUMBER" />
+      </div>
+      <div class="form-group">
+        <label for="MODEL">MODEL</label>
+        <input type="text" class="form-control" name="MODEL" id="MODEL" placeholder="MODEL" />
+      </div>
+      <div class="form-group">
+        <label for="JENIS_PERAWATAN">JENIS_PERAWATAN</label>
+        <input type="text" class="form-control" name="JENIS_PERAWATAN" id="JENIS_PERAWATAN" placeholder="JENIS_PERAWATAN" />
+      </div>
+      <div class="form-group">
+        <label for="ALAMAT">ALAMAT</label>
+        <input type="text" class="form-control" name="ALAMAT" id="ALAMAT" placeholder="ALAMAT" />
+      </div>
+      <div class="form-group">
+        <label for="REQ_DATE">REQ_DATE</label>
+        <input type="text" class="form-control" name="REQ_DATE" id="REQ_DATE" placeholder="REQ_DATE" />
+      </div>
+      <div class="form-group">
+        <label for="COMPLETION_DATE">COMPLETION_DATE</label>
+        <input type="text" class="form-control" name="COMPLETION_DATE" id="COMPLETION_DATE" placeholder="COMPLETION_DATE" />
+      </div>
+      <div class="form-group">
+        <label for="KETERANGAN">KETERANGAN</label>
+        <input type="text" class="form-control" name="KETERANGAN" id="KETERANGAN" placeholder="KETERANGAN" />
+      </div>
+      <div class="form-group">
+        <label for="STATUS_LAPORAN">STATUS_LAPORAN</label>
+        <input type="text" class="form-control" name="STATUS_LAPORAN" id="SN_OLD" placeholder="STATUS_LAPORAN" />
+      </div>
+    </div>
+  </div>
+  <!-- BUTTON SAVE -->
+  <div class="modal-footer justify-content-between">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    <button type="submit" value="Simpan" class="btn btn-primary">Save changes</button>
+  </div>
+</form>
